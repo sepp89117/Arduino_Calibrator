@@ -48,7 +48,7 @@ void loop()
     // Get the reading with the corresponding function! Here 'random()' is used for the universal example
     float humidity = random(0, 100);
 
-    // Calibrate the battery voltage to the percentage of remaining capacity
+    // Calibrate the reading to the calibrated value
     float calibratedValue = humCalibrator.calibrate(humidity);
 
     Serial.print(humidity, 2);
